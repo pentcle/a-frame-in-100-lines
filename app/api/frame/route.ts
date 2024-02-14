@@ -1,6 +1,6 @@
 import { FrameRequest, getFrameMessage, getFrameHtmlResponse } from '@coinbase/onchainkit';
 import { NextRequest, NextResponse } from 'next/server';
-import { NEXT_PUBLIC_URL } from '../../config';
+// import { NEXT_PUBLIC_URL } from '../../config';
 
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   let accountAddress: string | undefined = '';
@@ -32,9 +32,9 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         },
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/park-1.png`,
+        src: `${process.env.NEXT_PUBLIC_URL}/park-1.png`,
       },
-      postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
+      postUrl: `${process.env.NEXT_PUBLIC_URL}/api/frame`,
     }),
   );
 }
