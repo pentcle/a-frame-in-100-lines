@@ -4,24 +4,24 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time!',
+      label: 'Penta Time!',
     },
     {
       action: 'link',
-      label: 'Link to Google',
-      target: 'https://www.google.com',
+      label: 'Link to Pentacle',
+      target: 'https://pentacle.xyz',
     },
     {
-      label: 'Redirect to pictures',
+      label: 'Redirect to Pentacle',
       action: 'post_redirect',
     },
   ],
   image: {
     src: `${process.env.NEXT_PUBLIC_URL}/park-3.png`,
-    aspectRatio: '1:1',
+    aspectRatio: '1.91:1',
   },
   input: {
-    text: 'Tell me a boat story',
+    text: 'Tell me a Penta story',
   },
   postUrl: `${process.env.NEXT_PUBLIC_URL}/api/frame`,
 });
