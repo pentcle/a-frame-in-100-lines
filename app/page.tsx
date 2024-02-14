@@ -27,11 +27,11 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  title: 'pentacle.xyz',
-  description: 'LFG',
+  title: 'pentacaster',
+  description: 'in your quest for knowledge, a talisman of protection',
   openGraph: {
-    title: 'pentacle.xyz',
-    description: 'pentacle',
+    title: 'pentacaster',
+    description: 'in your quest for knowledge, a talisman of protection',
     images: [`${process.env.NEXT_PUBLIC_URL}/park-1.png`],
   },
   other: {
