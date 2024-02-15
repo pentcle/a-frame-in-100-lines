@@ -12,7 +12,7 @@ const frameMetadata = getFrameMetadata({
       target: 'https://pentacle.xyz',
     },
     {
-      label: 'Redirect to Pentacle',
+      label: 'Visit Pentacle',
       action: 'post_redirect',
     },
   ],
