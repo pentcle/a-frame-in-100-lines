@@ -12,7 +12,7 @@ const frameMetadata = getFrameMetadata({
       target: 'https://pentacle.xyz',
     },
     {
-      label: 'Visit Pentacle',
+      label: 'Pentacle Tarot moon calendar',
       action: 'post_redirect',
     },
   ],
