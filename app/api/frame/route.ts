@@ -16,22 +16,29 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     text = message.input;
   }
 
-  if (message?.button === 3) {
-    return NextResponse.redirect(
-      'https://tarot.pentacle.xyz',
-      { status: 302 },
-    );
-  }
+  // if (message?.button === 3) {
+  //   return NextResponse.redirect(
+  //     'https://tarot.pentacle.xyz',
+  //     { status: 302 },
+  //   );
+  // }
 
   return new NextResponse(
     getFrameHtmlResponse({
       buttons: [
         {
-          label: `Story: ${text} 🌲`,
+          label: 'moon calendar',
+          action: 'link',
+          target: 'https://tarot.pentacle.xyz',
+        },
+        {
+          label: 'ephemeris',
+          action: 'link',
+          target: 'https://ephemeris.ai',
         },
       ],
       image: {
-        src: `${process.env.NEXT_PUBLIC_URL}/park-1.png`,
+        src: `${process.env.NEXT_PUBLIC_URL}/lullaby-sml.jpg`,
       },
       postUrl: `${process.env.NEXT_PUBLIC_URL}/api/frame`,
     }),
