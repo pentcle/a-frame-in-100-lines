@@ -21,9 +21,9 @@ const frameMetadata = getFrameMetadata({
     src: `${process.env.NEXT_PUBLIC_URL}/ink-sml.jpg`,
     aspectRatio: '1.91:1',
   },
-  input: {
-    text: 'Astrology links',
-  },
+  // input: {
+  //   text: 'Astrology links',
+  // },
   postUrl: `${process.env.NEXT_PUBLIC_URL}/api/frame`,
 });
 
