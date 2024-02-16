@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Astrology links',
+      label: 'astrology links',
     },
     {
       label: 'pentacle.xyz',
