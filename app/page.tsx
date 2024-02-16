@@ -4,17 +4,17 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'astrology links',
+      label: 'ephemeris',
     },
     {
-      label: 'pentacle.xyz',
-      action: 'link',
-      target: 'https://pentacle.xyz',
-    },
-    {
-      label: 'moon calendar',
+      label: 'tarot',
       action: 'link',
       target: 'https://tarot.pentacle.xyz',
+    },
+    {
+      label: 'pentaclexyz',
+      action: 'link',
+      target: 'https://pentacle.xyz',
     },
   ],
   image: {
