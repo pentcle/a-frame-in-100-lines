@@ -4,25 +4,24 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Astrology links',
+      label: 'Penta Time!',
     },
     {
-      label: 'pentacle.xyz',
+      label: 'Link to Pentacle',
       action: 'link',
       target: 'https://pentacle.xyz',
     },
     {
-      label: 'moon calendar',
-      action: 'link',
-      target: 'https://tarot.pentacle.xyz',
+      label: 'Pentacle Tarot moon calendar',
+      action: 'post_redirect',
     },
   ],
   image: {
-    src: `${process.env.NEXT_PUBLIC_URL}/ink-sml.jpg`,
+    src: `${process.env.NEXT_PUBLIC_URL}/park-3.png`,
     aspectRatio: '1.91:1',
   },
   input: {
-    text: 'Astrology links',
+    text: 'Tell me a Penta story',
   },
   postUrl: `${process.env.NEXT_PUBLIC_URL}/api/frame`,
 });
